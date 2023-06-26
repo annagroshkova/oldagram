@@ -1,0 +1,44 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+      <link rel="stylesheet" href="index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="page">
+        <header class="header">
+          <img class="logo" src="images/logo.png">
+          <img class="avatar" src="images/user_avatar.jpg" alt="User avatar" />
+        </header>
+
+        <section class="card-container">
+        </section>
+      </div>
+
+      <template class="card-template">
+        <article class="card">
+          <div class="card__user">
+            <img src="" class="card__user-avatar">
+            <div class="card__user-info">
+              <p class="card__user-full-name"></p>
+              <p class="card__user-location"></p>
+            </div>
+          </div>
+          <img class="card__image-post" src="" alt=""/>
+          <div class="card__body">
+            <div class="card__buttons">
+              <button class="card__button card__like-button" type="button" aria-label="like"></button>
+              <button class="card__button card__comment-button" type="button" aria-label="comment"></button>
+              <button class="card__button card__message-button" type="button" aria-label="message"></button>
+            </div>
+            <p class="card__user-likes"></p>
+            <span class="card__user-nickname"></span><span class="card__user-comment"></span>
+          </div>
+        </article>
+      </template>
+
+      <script type="module" src="scripts/constants.js"></script>
+      <script type="module" src="scripts/Card.js"></script>
+      <script type="module" src="scripts/index.js"></script>
+    </body>
+</html>
